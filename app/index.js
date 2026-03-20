@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -130,4 +131,19 @@ const styles = StyleSheet.create({
   espacoFinal: {
     height: 40,
   }
+=======
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
+export default function Home() {
+  const router = useRouter();
+  return (
+    <View style={styles.container}>
+      <Text style={styles.texto}>Pagina 1</Text>
+    </View>
+  );
+}
+const styles = StyleSheet.create({
+  container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f5f5' },
+  texto: {fontSize: 36}
+>>>>>>> f83a30d9ab1bd0522aeac19b67e58da6bc7e32d2
 });
