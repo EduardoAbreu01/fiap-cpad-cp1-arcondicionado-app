@@ -6,21 +6,21 @@ export default function Layout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'pagina1',
+          title: 'Home',
           tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="pagina2"
         options={{
-          title: 'pagina2',
+          title: 'Temperatura da Sala',
           tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="pagina3"
         options={{
-          title: 'pagina3',
+          title: 'Abrir Chamado',
           tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
         }}
       />

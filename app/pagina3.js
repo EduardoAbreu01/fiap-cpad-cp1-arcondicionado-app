@@ -1,15 +1,60 @@
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
-
-export default function Layout(){
-    return(
-        <View style={styles.container}>
-            <Text style={styles.texto}>Página 3</Text>
-        </View>
-    );
+import React, { useState } from 'react';
+import { View, TextInput, Button, Text, StyleSheet, Alert } from 'react-native';
+ 
+export default function MeuFormulario() {
+  const [sala, setSala] = useState('');
+  const [temp, setTemperatura] = useState('');
+ 
+  const handleSubmit = () => {
+    if (sala === '' || temp === '') {
+      Alert.alert('Erro', 'Por favor, preencha todos os campos!');
+      return;
+    }
+    Alert.alert('Sucesso! Chamado Aberto', `Sala: ${sala} \nTemperatura: ${temp}`);
+  };
+ 
+  return (
+<View style={styles.container}>
+<Text style={styles.titulo}>Chamado</Text>
+<TextInput
+        style={styles.input}
+        placeholder="Digite a Sala"
+        value={sala}
+        onChangeText={setSala}  
+        autoCapitalize="none" 
+      />
+ 
+<TextInput
+        style={styles.input}
+        placeholder="Digite a Temperatura"
+        value={temp}
+        onChangeText={setTemperatura}
+      />
+ 
+      {}
+<Button title="Enviar" onPress={handleSubmit} />
+</View>
+  );
 }
-
+ 
 const styles = StyleSheet.create({
-    container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f5f5' },
-    texto: {fontSize: 36}
-})
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: '#fff',
+  },
+  titulo: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  input: {
+    height: 50,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 15,
+    marginBottom: 15,
+  },
+});
