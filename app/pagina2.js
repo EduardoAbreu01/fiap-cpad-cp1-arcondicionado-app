@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   container: { 
     flex: 1, 
     alignItems: 'center', 
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#000',
     padding: 30
   },
   texto: { 
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#fff',
     paddingHorizontal: 10,
     marginBottom: 20,
   },
@@ -71,9 +71,9 @@ const styles = StyleSheet.create({
     borderRadius: 90, 
     justifyContent: 'center', 
     alignItems: 'center',
-    backgroundColor: '#e8eaf6',
+    backgroundColor: '#fff',
     borderWidth: 2,
-    borderColor: '#c5cae9',
+    borderColor: '#fff',
   },
   status: {
     fontSize: 22,
@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
   },
   temperatura: {
     fontWeight: 'bold',
-    color: '#6200ee',
+    color: '#E83D84',
   },
   botao:{ 
     backgroundColor: '#E83D84', 

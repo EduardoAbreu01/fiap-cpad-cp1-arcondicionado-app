@@ -2,28 +2,49 @@ import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 export default function Layout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: '#E83D84' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: '#E83D84'}}>
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
+                headerStyle: {
+            backgroundColor: '#262626',
+          },
+          headerTintColor: '#E83D84',
+          tabBarStyle: {
+            backgroundColor: '#262626',
+          },
+          tabBarIcon: ({ color }) => <Ionicons name="home" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="pagina2"
         options={{
           title: 'Temperatura da Sala',
-          tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
+            headerStyle: {
+            backgroundColor: '#262626',
+          },
+          headerTintColor: '#E83D84',
+          tabBarStyle: {
+            backgroundColor: '#262626',
+          },
+          tabBarIcon: ({ color }) => <Ionicons name="thermometer" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="pagina3"
         options={{
           title: 'Abrir Chamado',
-          tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
+          headerStyle: {
+            backgroundColor: '#262626',
+          },
+          headerTintColor: '#E83D84',
+          tabBarStyle: {
+            backgroundColor: '#262626',
+          },
+          tabBarIcon: ({ color }) => <Ionicons name="call" size={24} color={color} />,
         }}
       />
     </Tabs>
-  );
+  )
 }

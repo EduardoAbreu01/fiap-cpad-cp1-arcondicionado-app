@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#F5F7FA', 
+    backgroundColor:'#000', 
   },
   header: {
     marginTop: 50,
@@ -74,15 +74,15 @@ const styles = StyleSheet.create({
   tituloApp: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#0056D2', 
+    color: '#F23064', 
   },
   subtituloApp: {
     fontSize: 16,
-    color: '#666',
+    color: '#ffff',
     marginTop: 5,
   },
   card: {
-    backgroundColor: '#FFF',
+    backgroundColor: '#000',
     padding: 20,
     borderRadius: 12,
     marginBottom: 20,
@@ -131,19 +131,5 @@ const styles = StyleSheet.create({
   espacoFinal: {
     height: 40,
   }
-=======
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
-export default function Home() {
-  const router = useRouter();
-  return (
-    <View style={styles.container}>
-      <Text style={styles.texto}>Pagina 1</Text>
-    </View>
-  );
-}
-const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#f5f5f5' },
-  texto: {fontSize: 36}
->>>>>>> f83a30d9ab1bd0522aeac19b67e58da6bc7e32d2
+
 });
