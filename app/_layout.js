@@ -45,6 +45,20 @@ export default function Layout() {
           tabBarIcon: ({ color }) => <Ionicons name="call" size={24} color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="pagina4"
+        options={{
+          title: 'Perfil',
+          headerStyle: {
+            backgroundColor: '#262626',
+          },
+          headerTintColor: '#E83D84',
+          tabBarStyle: {
+            backgroundColor: '#262626',
+          },
+          tabBarIcon: ({ color }) => <Ionicons name="person" size={24} color={color} />,
+        }}
+      />
     </Tabs>
   )
 }

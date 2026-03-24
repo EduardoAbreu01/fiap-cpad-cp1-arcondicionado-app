@@ -20,6 +20,7 @@ export default function MeuFormulario() {
         style={styles.input}
         placeholder="Digite a Sala"
         value={sala}
+        placeholderTextColor="#aaa"
         onChangeText={setSala}  
         autoCapitalize="none" 
       />
@@ -27,6 +28,7 @@ export default function MeuFormulario() {
 <TextInput
         style={styles.input}
         placeholder="Digite a Temperatura"
+        placeholderTextColor="#aaa"
         value={temp}
         onChangeText={setTemperatura}
       />
